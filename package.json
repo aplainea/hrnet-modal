@@ -1,20 +1,38 @@
 {
     "name": "hrnet-modal-aplainea",
-    "version": "0.1.0",
+    "version": "1.0.5",
+    "description": "Modal component React library for HRNet",
     "private": false,
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "source": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aplainea/hrnet-modal"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+        "microbundle-crl": "^0.13.11",
         "node-sass": "^7.0.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
         "web-vitals": "^2.1.4"
     },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
+        "micro-build": "microbundle-crl --no-compress --format modern,cjs",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
